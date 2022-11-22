@@ -1,0 +1,62 @@
+:root {
+  --border-color: #6a93b9;
+  --divider-color: grey;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2em;
+  background-color: white;
+  border: 0.14em solid var(--border-color);
+  border-radius: 0.5rem;
+  position: relative;
+  padding: 0.5em 0.8em;
+}
+
+.main-container div:nth-of-type(1) {
+    width: 0.1em;
+    background-color: var(--divider-color);
+    margin: 0.2em 0.6em;
+    align-self: stretch;
+  }
+
+.main-container div:nth-of-type(2) {
+  width: 0.1em;
+  background-color: var(--divider-color);
+  margin: 0.2em 0.6em;
+  align-self: stretch;
+}
+
+span{
+    flex-grow: 1;
+    border-radius: 0.2em;
+    margin: 0 1em;
+}
+
+.colors {
+  padding: 0.2em;
+}
+
+ul {
+  position: absolute;
+  left: 0;
+  padding: 0.2em 1em;
+  top: 2.5rem;
+  width: 100%;
+  list-style: none;
+  max-height: 15em;
+  overflow-y: auto;
+  box-shadow: 0px 0px 3px 0px grey;
+  border-radius: 0.3rem;
+}
+
+li {
+  font-size: 1rem;
+}
+
+p {
+  padding: 0.5em;
+  border-radius: 0.2rem;
+}
